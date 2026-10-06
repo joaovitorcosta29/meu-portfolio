@@ -1,0 +1,116 @@
+#81D2C7
+#000000
+#7389AE
+#416788
+
+* {
+    box-sizing: border-box;
+}
+
+ main {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+    header {
+        background-color: #7389AE;
+        color: #000000;
+        padding: 24px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    nav a:hover {
+        background-color: #416788;
+        padding: 8px 12px;
+        border-radius: 6px;
+        
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid #000000;
+        padding: 12px;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+
+        outline: none; 
+    }
+    input :focus{
+        border-color: #416788;
+    }
+    
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+    }
+
+    button {
+        background-color: #416788;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .destaque {
+        background-color: #ffffff;
+        border-left: 4px solid #416788;
+        padding: 16px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        font-family: 'Clarity City', sans-serif;
+    }
+    h2{
+        font-size: 1.75rem;
+        font-family: 'Clarity City', sans-serif;
+    }
+    h3{
+        font-size: 1.25rem;
+        font-family: 'Clarity City', sans-serif;
+    }
+
+    :root {
+        --cor-suave: #B5BAD0;
+    }
+    tbody tr:nth-child(even) {
+
+    background: var(--cor-suave);
+    }
+
+    footer {
+        background-color: #7389AE;
+        color: #000000;
+        padding: 24px;
+        text-align: center;
+    }

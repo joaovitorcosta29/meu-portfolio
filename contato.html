@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -19,6 +23,64 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section>
+            <h3>Fale comigo</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome" id="nome" required minlength="3"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone"><br>
+                    <label for="Data_de_nascimento">Data de Nascimento:</label>
+                    <input type="date" name="Data_de_nascimento" id="Data_de_nascimento"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep" required pattern="[0-9]{8}" placeholder="Somente Números"><br>
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua" id="rua"><br>
+                    <label for="numero">Número:</label>
+                    <input type="text" name="numero" id="numero" min="1" max="99999"><br>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade"><br>
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado">
+                        <option value="PR">Paraná</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Interesse</legend>
+                    <label for="Área de Interesse">Área de Interesse:</label>
+                    <select name="Área de Interesse" id="Área de Interesse" required>
+                        <option value="Front-End">Front-End</option>
+                        <option value="Back-End">Back-End</option>
+                        <option value="Banco_de_Dados">Banco de Dados</option>
+                        <option value="Full-Stack">Full-Stack</option>
+                    </select><br>
+                    <label for="Nível de Experiência">Nível de Experiência:</label>
+                    <label for="Iniciante">Iniciante</label>
+                    <input type="radio" name="Nível de Experiência" id="Iniciante">
+                    <label for="Intermediário">Intermediário</label>
+                    <input type="radio" name="Nível de Experiência" id="Intermediário">
+                    <label for="Avançado">Avançado</label>
+                    <input type="radio" name="Nível de Experiência" id="Avançado"><br><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="5" maxlength="500"></textarea><br>
+                    <input type="checkbox" name="aceito" id="aceito" required>
+                    <label for="aceito">Li e aceito os termos de uso</label><br><br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+        </section>
+    </main>
     <footer>
         <p>
             &copy; 2026 João Vitor Costa Lima <a href="mailto:joao.v.lima218@aluno.senai.br">Email</a>
